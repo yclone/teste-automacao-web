@@ -3,7 +3,13 @@
 @acessophptravels
 Funcionalidade: Acessar o sistema web do phptravels e criar uma conta
 
-
+  @Chrome @Login
+ 	Cenario: logar no site phptravels
+    Dado que o usuario acesse o site da phptravels pela URL "https://phptravels.net/admin/"
+    Quando digitar no campo de email o valor "admin@phptravels.com"
+    E  digitar no campo senha o valor "demoadmin"
+    E clicar em logar
+    Entao deve ser logado no sistema
 
   @Chrome @criarConta
  	Cenario: logar criar conta no sistema e preencher o formulario
